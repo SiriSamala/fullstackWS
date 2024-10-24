@@ -37,9 +37,17 @@ body {
     width: 80%;
     border: 0px;
     outline: none;
+    border-bottom: 2px solid transparent;
 }
 
+.logic-input:focus{
+    border-bottom: 2px solid rgb(190, 20, 190);
+}
+/* .login-input:hover{
+    cursor: not-allowed;
+} */
 .login-btn {
+    cursor: pointer;
     background: #B2FEFA;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);
@@ -50,6 +58,9 @@ body {
     border-radius: 5px;
     padding: 1rem;
     width: 90%;
-    border: 0px;
+    border: 3px solid transparent;
 
+}
+.login-btn:hover{
+    border:1px solid white;
 }

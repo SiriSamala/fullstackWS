@@ -40,7 +40,7 @@ body {
     border-bottom: 2px solid transparent;
 }
 
-.logic-input:focus{
+.login-input:focus{
     border-bottom: 2px solid rgb(190, 20, 190);
 }
 /* .login-input:hover{
@@ -64,3 +64,6 @@ body {
 .login-btn:hover{
     border:1px solid white;
 }
+/* .anchor-a{ */
+    /* display:flex; */
+/* } */

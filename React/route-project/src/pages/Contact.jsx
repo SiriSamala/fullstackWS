@@ -3,11 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div>
-      {/*
-  Heads up! 👋
-
-  This component comes with some rtl classes. Please remove them if they are not needed in your project.
-*/}
+      {/*       
 
 <div>
   <h2 className="sr-only">Steps</h2>
@@ -99,6 +95,115 @@ const Contact = () => {
     </ol>
   </div>
 </div>
+ */}
+
+
+
+
+
+
+
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+
+        <div className="h-32 rounded-lg bg-gray-200">
+          <a href="#" className="group block overflow-hidden">
+            <div className="relative h-[350px] sm:h-[450px]">
+              <img
+                src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
+              />
+
+              <img
+                src="https://images.unsplash.com/photo-1523381140794-a1eef18a37c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MjQ2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
+              />
+            </div>
+
+            <div className="relative bg-white pt-3">
+              <h3 className="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                Limited Edition Sports Trainer
+              </h3>
+
+              <p className="mt-1.5 tracking-wide text-gray-900">$189.99</p>
+            </div>
+          </a>
+        </div>
+
+
+
+
+
+        <div className="h-32 rounded-lg bg-gray-200">
+          <a href="#" className="group block overflow-hidden">
+            <div className="relative h-[350px] sm:h-[450px]">
+              <img
+                src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
+              />
+
+              <img
+                src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80"
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
+              />
+            </div>
+
+            <div className="relative bg-white pt-3">
+              <h3 className="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                Limited Edition Sports Trainer
+              </h3>
+
+              <div className="mt-1.5 flex items-center justify-between text-gray-900">
+                <p className="tracking-wide">$189.99</p>
+
+                <p className="text-xs uppercase tracking-wide">6 Colors</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+
+
+
+
+      {/* <a href="#" className="relative block rounded-tr-3xl border border-gray-100">
+        <span
+          className="absolute -right-px -top-px rounded-bl-3xl rounded-tr-3xl bg-rose-600 px-6 py-4 font-medium uppercase tracking-widest text-white"
+        >
+          Save 10%
+        </span>
+
+        <img
+          src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          className="h-80 w-full rounded-tr-3xl object-cover"
+        />
+
+        <div className="p-4 text-center">
+          <strong className="text-xl font-medium text-gray-900"> Aloe Vera </strong>
+
+          <p className="mt-2 text-pretty text-gray-700">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia rem vel voluptatum in
+            eum vitae aliquid at sed dignissimos.
+          </p>
+
+          <span
+            className="mt-4 block rounded-md border border-indigo-900 bg-indigo-900 px-5 py-3 text-sm font-medium uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-indigo-900"
+          >
+            Learn More
+          </span>
+        </div>
+      </a> */}
+
+
+
+
+
     </div>
   )
 }

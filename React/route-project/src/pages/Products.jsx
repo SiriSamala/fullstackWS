@@ -14,8 +14,7 @@ const Products = () => {
             <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">New Collection</h2>
 
             <p className="mx-auto mt-4 max-w-md text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
-              dicta incidunt est ipsam, officia dolor fugit natus?
+              Grab before it's late..!
             </p>
           </header>
 

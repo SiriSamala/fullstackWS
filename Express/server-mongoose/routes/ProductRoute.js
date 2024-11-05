@@ -12,6 +12,8 @@ router.get('/all',async(req,res)=>{
     }
 })
 
+module.export = router
+
 // GET - READ 
 // POST - CREATE 
 // PUT - UPDATE 

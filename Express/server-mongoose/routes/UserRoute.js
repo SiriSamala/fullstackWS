@@ -20,10 +20,11 @@ router.post('/add', async (req, res) => {
         }
 
         //TODO : Add User Email & Phone Validation
-        // const EmailCheck = await Users.findOne({ email: email })
-        // if (EmailCheck) {
-        //     res.send(500).json({ message: `User with ${email} already exists !` })
-        // }
+
+        //Email
+
+        //Phone
+
         await newuser.save()
         res.status(200).json(newuser)
     } catch (error) {

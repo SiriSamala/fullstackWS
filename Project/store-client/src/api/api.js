@@ -20,4 +20,7 @@ const getUsers = () => axios.get(`${API}/users/all`)
 //AuthEndponts
 const Login = (data) => axios.post(`${API}/auth/login`, data)
 
-export { getProducts, getOrders, getUsers, Login }
+// Addproducts
+const AddProducts = (data)=> axios.post(`${API}/products/add`,data)
+
+export { getProducts, getOrders, getUsers, Login,AddProducts }

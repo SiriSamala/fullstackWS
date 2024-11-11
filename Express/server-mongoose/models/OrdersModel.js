@@ -10,7 +10,7 @@ const OrdersSchema=new mongoose.Schema({
         type:Number,
         required:true
     },
-    Price:{
+    Phone:{
         type:Number,
         required:true
     },

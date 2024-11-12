@@ -14,7 +14,7 @@ router.get('/all', async (req, res) => {
 })
 
 // Method : POST  || API : localhost:3000/products/add
-router.post('/add',  async (req, res) => {
+router.post('/add', async (req, res) => {
     try {
         const newproduct = new Products(req.body)
         const { title, img, price } = newproduct
@@ -29,7 +29,7 @@ router.post('/add',  async (req, res) => {
 })
 
 // Method : PUT  || API : localhost:3000/products/edit/_id
-router.put('/edit/:id',  async (req, res) => {
+router.put('/edit/:id', async (req, res) => {
     try {
         const id = req.params.id
         const existingproduct = await Products.findOne({ _id: id })
@@ -44,7 +44,7 @@ router.put('/edit/:id',  async (req, res) => {
 })
 
 // Method : DELETE  || API : localhost:3000/products/delete/_id
-router.delete('/delete/:id',  async (req, res) => {
+router.delete('/delete/:id', async (req, res) => {
     try {
         const id = req.params.id
         const existingproduct = await Products.findOne({ _id: id })
@@ -78,3 +78,4 @@ module.exports = router
 // 201 -> CREATED
 // 400 -> BAD Request
 // 401 -> UnAuthorized
+// 409 -> Conflict

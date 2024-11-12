@@ -6,9 +6,9 @@ const API = 'http://localhost:3000'
 
 // ProductEndPonts
 const getProducts = () => axios.get(`${API}/products/all`)
-
-
-
+const addProduct = (product) => axios.post(`${API}/products/add`, product)
+const editProduct = (product, id) => axios.put(`${API}/products/edit/${id}`, product)
+const deleteProduct = (id) => axios.delete(`${API}/products/delete/${id}`)
 
 // OrderEndPonts
 const getOrders = () => axios.get(`${API}/orders/all`)
@@ -18,12 +18,7 @@ const getOrders = () => axios.get(`${API}/orders/all`)
 const getUsers = () => axios.get(`${API}/users/all`)
 
 //AuthEndponts
-const Login = (data) => axios.post(`${API}/auth/login`, data)
+const Login = (credentials) => axios.post(`${API}/auth/login`, credentials)
+const Register = (credentials) => axios.post(`${API}/auth/register`, credentials)
 
-// ProductsEndPoint->add
-const AddProducts = (data)=> axios.post(`${API}/products/add`,data)
-
-// AuthEndPoint->register
-const Register =(data)=>axios.post(`${API}/auth/register`,data)
-
-export { getProducts, getOrders, getUsers, Login,AddProducts , Register }
+export { getProducts, getOrders, getUsers, Login, Register, addProduct, deleteProduct, editProduct }

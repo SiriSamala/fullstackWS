@@ -12,11 +12,9 @@ router.get('/all', async (req, res) => {
 })
 
 router.post('/add', async (req, res) => {
-
-
     try {
         // const newuser = new Users(req.body)
-        const { name, email, phone, password,role } = req.body
+        const { name, email, phone, password, role } = req.body
         if (!name || !email || !phone || !password || !role) {
             return res.status(401).json({ message: "All fields required" })
         }
@@ -24,18 +22,18 @@ router.post('/add', async (req, res) => {
         //TODO : Add User Email & Phone Validation
 
         //Email
-        const exisitingemail = await Users.findOne({email})
-        if(exisitingemail) {
+        const exisitingemail = await Users.findOne({ email })
+        if (exisitingemail) {
             return res.status(500).json({ message: `User with ${email} already exists !` })
         }
 
         //Phone
-        const exisitingphone = await Users.findOne({phone})
-        if(exisitingphone) {
+        const exisitingphone = await Users.findOne({ phone })
+        if (exisitingphone) {
             return res.status(500).json({ message: `User with ${phone} already exists !` })
         }
         const salt = await bcrypt.genSalt(10)
-        const hashedpassword = await bcrypt.hash(password,salt)
+        const hashedpassword = await bcrypt.hash(password, salt)
         const newuser = new Users({
             name,
             email,
@@ -48,24 +46,6 @@ router.post('/add', async (req, res) => {
     } catch (error) {
         return res.status(500).json({ message: error.message })
     }
-    // try {
-    //     const newuser = new Users(req.body)
-    //     const { name, email, phone, password } = newuser
-    //     if (!name || !email || !phone || !password) {
-    //         res.status(400).json({ message: "All fields required" })
-    //     }
-
-    //     //TODO : Add User Email & Phone Validation
-
-    //     //Email
-
-    //     //Phone
-
-    //     await newuser.save()
-    //     res.status(200).json(newuser)
-    // } catch (error) {
-    //     res.status(500).json({ message: error.message })
-    // }
 })
 
 router.put('/edit/:id', async (req, res) => {

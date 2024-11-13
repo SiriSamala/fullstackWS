@@ -1,14 +1,14 @@
 import React from 'react'
 import {ShoppingBasket, ShoppingCart, Users} from "lucide-react"
 
-const AdminDashboardHomeCards = () => {
+const AdminDashboardHomeCards = ({products,orders,users}) => {
     return (
         <>
             <div className='w-full flex flex-row justify-center items-center gap-6 py-3 px-3'>
                 <div className='w-[25vw] h-[10vh] flex flex-row justify-center items-start px-2 shadow-md rounded-sm hover:text-purple-500 '>
                     <div className='w-[70%] h-full flex flex-col justify-center items-start px-4'>
                         <p className='text-3xl font-bold'>
-                            100
+                            {users}
                         </p>
                         <p className='text-sm font-semibold px-1'>
                             Users
@@ -21,7 +21,7 @@ const AdminDashboardHomeCards = () => {
                 <div className='w-[25vw] h-[10vh] flex flex-row justify-center items-start px-2 shadow-md rounded-sm hover:text-purple-500 '>
                     <div className='w-[70%] h-full flex flex-col justify-center items-start px-4'>
                         <p className='text-3xl font-bold'>
-                            100
+                            {products}
                         </p>
                         <p className='text-sm font-semibold px-1'>
                             Products
@@ -34,7 +34,7 @@ const AdminDashboardHomeCards = () => {
                 <div className='w-[25vw] h-[10vh] flex flex-row justify-center items-start px-2 shadow-md rounded-sm hover:text-purple-500 '>
                     <div className='w-[70%] h-full flex flex-col justify-center items-start px-4'>
                         <p className='text-3xl font-bold'>
-                            100
+                            {orders}
                         </p>
                         <p className='text-sm font-semibold px-1'>
                             Orders
